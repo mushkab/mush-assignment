@@ -2,16 +2,10 @@ const csv = require('csvtojson');
 const moment = require('moment');
 const miners = require('./miners');
 
-
 async function processCSV(filePath, monthAndYear) {
     if(!moment(monthAndYear).isValid()) {
-        throw new Error('date input is not valid should be of format YYYY-MM');
+        throw new Error('Invalid date input should be of format YYYY-MM');
     }
-
-    if (!filePath) {
-        throw new Error('');
-    }
-
 
     const rows = await csv().fromFile(filePath);
 
@@ -28,7 +22,7 @@ async function processCSV(filePath, monthAndYear) {
         expectedRevenue += miners.getMonthRevenueInRange(monthAndYear, monthlyPrice, startDay, endDay);
     });
 
-    console.log(`${monthAndYear}: expected revenue: ${expectedRevenue}, expected total capacity of the unreserved offices: ${totalCapacity}`);
+    console.log(`${monthAndYear}: expected revenue: $${expectedRevenue.toLocaleString()}, expected total capacity of the unreserved offices: ${totalCapacity}`);
 
 }
 
@@ -36,7 +30,8 @@ async function processCSV(filePath, monthAndYear) {
 
 const arguments = process.argv.slice(2);
 
+if (arguments.length !== 2) {
+    throw new Error('Invalid input');
+}
 
-processCSV(arguments[0], arguments[1]).catch(e => {
-    console.log(e);
-});
+processCSV(arguments[0], arguments[1]);
