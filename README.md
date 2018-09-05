@@ -42,7 +42,7 @@ calc days function
 
 ## What technical debt would you pay if you had one more iteration ?
 
-- support large files using streaming
+- support large files using streaming - currently memory will explode
 - handle corrupted data
 
 ## Assumptions
