@@ -12,10 +12,10 @@ http://blog.teamtreehouse.com/install-node-js-npm-mac
 
 from terminal:
 
-0. git clone
-1. npm install from repo directory
-2. node index.js <CSV-PATH> <YYYY-MM> for running the script
-3. npm test for running the tests :)
+0. ``git clone``
+1. ``npm install`` from repo directory
+2. ``node index.js <CSV-PATH> <YYYY-MM>`` for running the script
+3. ``npm test`` for running the tests :)
 
 
 ## output samples:
