@@ -9,7 +9,7 @@ function getMonthRevenueInRange(monthAndYear, monthlyPrice, startDay, endDay) {
 
 function getUnreservedCapacityInRange(monthAndYear, capacity, startDay, endDay) {
     const days = getNumberOfMonthDaysInRange(monthAndYear,startDay, endDay);
-    return days === 0 ? capacity : 0;
+    return days > 0 ? 0 : capacity;
 }
 
 module.exports = {
