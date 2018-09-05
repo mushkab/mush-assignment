@@ -26,7 +26,7 @@ function getNumberOfMonthDaysInRange(monthAndYear, startDay, endDay) {
 
     // end day and monthAndYear are in the same month and year
     if(endDayMoment.format('YYYY-MM') === monthAndYear) {
-        return  endDayMoment.diff(startOfMonthMoment, 'days') + 1;
+        return endDayMoment.diff(startOfMonthMoment, 'days') + 1;
     }
 
     // full month

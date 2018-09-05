@@ -38,12 +38,15 @@ from terminal:
 
 ## What was the most difficult thing for you?
 
-calc days function
+1. calc month days in range function
+
+2. fine tuning for handling it back
 
 ## What technical debt would you pay if you had one more iteration ?
 
-- support large files using streaming - currently memory will explode
-- handle corrupted data
+1. handle invalid data, for example: bad date format, start date higher then end date, etc...
+
+2. support large files using streaming - currently memory will explode
 
 ## Assumptions
 
