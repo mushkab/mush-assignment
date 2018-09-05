@@ -21,9 +21,13 @@ from terminal:
 ## output samples:
 
 2013-01: expected revenue: $8,100, expected total capacity of the unreserved offices: 254
+
 2013-06: expected revenue: $15,150, expected total capacity of the unreserved offices: 241
+
 2014-03: expected revenue: $37,214.516, expected total capacity of the unreserved offices: 203
+
 2014-09: expected revenue: $86,700, expected total capacity of the unreserved offices: 120
+
 2015-07: expected revenue: $76,225.806, expected total capacity of the unreserved offices: 135
 
 
